@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+html * /* override x.xhtml.ru style */ {
+  scrollbar-width: thin;
+  font-family: "Roboto", sans-serif;
+  scrollbar-color: #86a2f157;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #557be262;
+  border-radius: 3px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(82, 77, 77, 0.7), rgba(0, 0, 0, 0.8)),
+    url(../assets/welcome.jpg) no-repeat;
+  background-attachment: fixed;
+
+  background-size: cover;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+a:hover {
+  color: cornflowerblue;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-self: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 650px;
+  width: 100%;
+  align-self: center;
+}
+
+.content__header {
+  margin-top: 100px;
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome__header {
+  width: 100%;
+  max-width: 500px;
+}
+
+.welcome__header h2 {
+  font-size: 50px;
+  color: #fff;
+  margin: 20px;
+}
+
+.request__form {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.822);
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 15px;
+  max-width: 450px;
+  height: 450px;
+}
+.request__form h2 {
+  text-align: center;
+  color: #ffa339;
+  font-size: 35px;
+}
+.request__form input {
+  position: relative;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border: none;
+
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.request__form textarea {
+  position: relative;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  font-size: 20px;
+  resize: none;
+}
+
+.request__form input:focus,
+textarea:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fafafa;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #86a2f157;
+  transition: all 0.2s linear;
+}
+
+.request__form button.send__btn {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #e7a150;
+  color: #fff;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Блок информации */
+
+.info {
+  width: 100%;
+  height: auto;
+  background-color: #ececec8c;
+}
+.header__section {
+  font-size: 45px;
+  color: #000;
+  padding: 20px;
+}
+hr {
+  width: 400px;
+  height: 5px;
+  background-color: #e7a150;
+  margin: 10px;
+}
+.content__info {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content__info div.avatar__ring {
+  margin: 10px 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: url(../assets/avatar_ring2.jpg) no-repeat;
+  background-size: 250px;
+  box-shadow: 0 0 40px 10px #a5a5a586;
+}
+
+.content__info h2 {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 40px 5px #a5a5a54b;
+}
+
+/* Блок где пишу о себе */
+.about {
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+}
+
+div.about__contant {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.block__content {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 30px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px 5px #a5a5a54b;
+}
+.block__content h4 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 25px;
+}
+hr.content__separator {
+  width: 100%;
+  background-color: #e7a150;
+  height: 3px;
+  margin: 0;
+}
+.block__content p {
+  padding: 10px;
+  text-align: center;
+}
+.block__content p:nth-child(even) {
+  background-color: lightyellow;
+}
+
+/* Блок контактов */
+.contacts {
+  width: 100%;
+  min-height: 400px;
+  background-color: #ececec8c;
+}
+.contacts__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts__block div {
+  margin: 30px;
+
+  max-width: 350px;
+  width: 100%;
+}
+.contacts__block h2 {
+  font-size: 36px;
+}
+
+.contacts__block p {
+  margin: 15px;
+}
+
+/* Блок сообщений */
+
+div.message {
+  background-color: #fff;
+}
+
+div.msg__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+}
+
+div.msg__block {
+
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background-color: #4E8D7C;
+  width: 100%;
+  color: #fff;
+  border-radius: 25px;
+  padding: 15px 0 ;
+  margin: 10px;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
+}
+
+div.msg__block h4{
+  text-align: center;
+  margin: 10px;
+
+}
+div.msg__block p{
+  margin: 0 20px;
+
+}
+
+
+
+
+div.msg__block button[type='submit'] {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  background-color: #4E8D7C;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  min-height: 100px;
+  height: auto;
+  font-size: 12px;
+  color: #fff;
+}
+.footer span {
+  font-size: 14px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
