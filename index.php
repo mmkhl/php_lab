@@ -163,6 +163,15 @@
             </div>
         </div>
     </div>
+    <div class="questions" id="questions">
+        <div class="container">
+            <h2 class="header__section">Вопросы</h2>
+            <hr>
+        </div>
+    </div>
+
+
+
     <div class="footer">
         <div class="container">
             <span>Серверное веб-программирование Попков Михаил &copy; 2023</span>

@@ -282,6 +282,7 @@ div.msg__section {
   justify-content: space-around;
   width: auto;
   height: auto;
+  padding-bottom: 30px;
 }
 
 div.msg__block {
@@ -324,6 +325,19 @@ div.msg__block button[type='submit'] {
   font-size: 25px;
 }
 
+/* Блок с вопросами для проверки знаний */
+
+div.questions{
+  background-color: #ececec8c;
+  padding-bottom: 30px;
+  
+}
+
+
+
+
+
+
 
 .footer {
   position: relative;
@@ -346,3 +360,4 @@ div.msg__block button[type='submit'] {
   right: 0;
   text-align: center;
 }
+
