@@ -1,1 +1,1 @@
-git remote add origin https://github.com/mmkhl/php_lab.git
+# This repository is trening for php in university
