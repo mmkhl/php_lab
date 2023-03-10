@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
                     <a href="#about">О себе</a>
                     <a href="#contacts">Контакты</a>
                     <a href="#message">Сообщения</a>
-                    <a href="./auth.php">
+                    <a href="./auth-page/auth.php">
                         <?php
                         include './php/checkSession.php';
                         ?>
@@ -163,10 +163,76 @@
             </div>
         </div>
     </div>
+    <div class="users" id="users">
+        <div class="container">
+            <h2 class="header__section">Пользователи</h2>
+            <hr>
+            <div>
+                <?php
+                include './php/users.php';
+
+                if (!count($msg_array)) {
+                    echo '<h4>Пользователей пока нет </h4>';
+                } else {
+                    echo '
+                        <table>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Фаммилия</th>
+                                <th>Логин</th>
+                            </tr>
+                        ';
+                    foreach ($users as $user) {
+                        echo '
+                            <tr style="text-align: center;">
+                                <td>' . $user['username'] . '</td>
+                                <td>' . $user['surname'] . '</td>
+                                <td>' . $user['login'] . '</td>
+                            </tr>';
+                    }
+                    echo '</table>';
+                }
+                ?>
+            </div>
+
+        </div>
+    </div>
     <div class="questions" id="questions">
         <div class="container">
             <h2 class="header__section">Вопросы</h2>
             <hr>
+            <?php
+            if (!$quest_arr) {
+                echo '<p>Вопросов нет</p>';
+            } else {
+                // var_dump($quest_arr);
+                echo '<form method="post" action="">';
+
+
+
+                foreach ($quest_arr as $arr) {
+                    echo '
+                    <h2>' . $arr[1] . '</h2>
+                    
+                    </br>';
+
+                    foreach ($answ_arr as $answ) {
+                        if ($arr[0] == $answ[0]) {
+                            // print($answ[1]);
+                            echo '
+                            <input type="radio" name="variant'.$answ[0].'">'.$answ[1].'</input>
+
+                            </br>';
+                        }
+                    }
+                }
+                echo '
+                <input type="submit" value="Отправить"/>
+            </form>';
+            }
+
+
+            ?>
         </div>
     </div>
 
@@ -174,7 +240,7 @@
 
     <div class="footer">
         <div class="container">
-            <span>Серверное веб-программирование Попков Михаил &copy; 2023</span>
+            <span>Серверное веб-программирование Попков Михаил и Валерий &copy; 2023</span>
         </div>
     </div>
 </body>

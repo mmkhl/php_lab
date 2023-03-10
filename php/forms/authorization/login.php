@@ -18,7 +18,6 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
       $_SESSION['name_user'] = $data_db[2];
       $_SESSION['surname'] = $data_db[1];
       if (password_verify($_POST['password'], $data_db[4])) {
-        var_dump(password_verify($_POST['passwor'], $data_db[4]));
         header("Location: / ");
       } else {
         header("Location: /auth.php ");
@@ -27,6 +26,3 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
   }
 }
 ?>
-<!-- <script type="text/javascript">
-  document.location.replace("/"); /*делаем редирект на главную страницу сайта*/
-</script> -->

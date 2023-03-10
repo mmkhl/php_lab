@@ -286,15 +286,14 @@ div.msg__section {
 }
 
 div.msg__block {
-
   position: relative;
   max-width: 500px;
   width: 100%;
-  background-color: #4E8D7C;
+  background-color: #4e8d7c;
   width: 100%;
   color: #fff;
   border-radius: 25px;
-  padding: 15px 0 ;
+  padding: 15px 0;
   margin: 10px;
   height: auto;
   -webkit-box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
@@ -302,41 +301,50 @@ div.msg__block {
   box-shadow: 0px 0px 17px 2px rgba(34, 60, 80, 0.2);
 }
 
-div.msg__block h4{
+div.msg__block h4 {
   text-align: center;
   margin: 10px;
-
 }
-div.msg__block p{
+div.msg__block p {
   margin: 0 20px;
-
 }
 
-
-
-
-div.msg__block button[type='submit'] {
+div.msg__block button[type="submit"] {
   position: absolute;
   top: 5px;
   right: 10px;
   border: none;
-  background-color: #4E8D7C;
+  background-color: #4e8d7c;
   color: #fff;
   font-size: 25px;
 }
 
 /* Блок с вопросами для проверки знаний */
 
-div.questions{
+div.users {
   background-color: #ececec8c;
   padding-bottom: 30px;
-  
 }
 
-
-
-
-
+table {
+  margin: 0 auto;
+  width: 70%;
+}
+th{
+  background: #afcde7;
+  color: white;
+  padding: 10px 20px;
+}
+th,
+td {
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: white;
+}
+td {
+  background: #d8e6f3;
+}
 
 
 .footer {
@@ -360,4 +368,3 @@ div.questions{
   right: 0;
   text-align: center;
 }
-
