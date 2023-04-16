@@ -15,7 +15,7 @@ session_start();
 
 <body>
   <div class="autorization__block">
-    <form action="./php/forms/authorization/reg_user.php" method="POST">
+    <form action="../php/forms/authorization/reg_user.php" method="POST">
       <div class="nad__strokoi">
         <h2 class="text__nad">Регистрация</h2>
       </div>

@@ -199,40 +199,11 @@
     </div>
     <div class="questions" id="questions">
         <div class="container">
-            <h2 class="header__section">Вопросы</h2>
-            <hr>
+            <h2 class="header__section">Загрузка изображений</h2>
             <?php
-            if (!$quest_arr) {
-                echo '<p>Вопросов нет</p>';
-            } else {
-                // var_dump($quest_arr);
-                echo '<form method="post" action="">';
-
-
-
-                foreach ($quest_arr as $arr) {
-                    echo '
-                    <h2>' . $arr[1] . '</h2>
-                    
-                    </br>';
-
-                    foreach ($answ_arr as $answ) {
-                        if ($arr[0] == $answ[0]) {
-                            // print($answ[1]);
-                            echo '
-                            <input type="radio" name="variant'.$answ[0].'">'.$answ[1].'</input>
-
-                            </br>';
-                        }
-                    }
-                }
-                echo '
-                <input type="submit" value="Отправить"/>
-            </form>';
-            }
-
-
+            include "./"
             ?>
+            
         </div>
     </div>
 

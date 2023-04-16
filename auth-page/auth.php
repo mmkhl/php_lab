@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="autorization__block">
-    <form action="./php/forms/authorization/login.php" method="POST">
+    <form action="../php/forms/authorization/login.php" method="POST">
       <div class="nad__strokoi">
         <h2 class="text__nad">Вход</h2>
       </div>

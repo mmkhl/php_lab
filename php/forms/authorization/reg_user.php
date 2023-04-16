@@ -13,7 +13,7 @@ if ($_POST['login'] != '' && $_POST['password'] != '') {
   '" . $_SESSION['password'] . "')";
   $added_result = mysqli_query($link, $q_addMsg);
   var_dump($_SESSION['password']);
-  header("Location: /auth.php ");
+  header("Location: ../../../auth-page/auth.php ");
 } else {
   echo "No data in input";
 }
