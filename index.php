@@ -200,10 +200,8 @@
     <div class="questions" id="questions">
         <div class="container">
             <h2 class="header__section">Загрузка изображений</h2>
-            <?php
-            include "./"
-            ?>
-            
+            <hr>
+            <?php include "./views/upload-img/upload.php" ?>
         </div>
     </div>
 
