@@ -93,7 +93,7 @@
                     echo "<h4>" . $about_arr[1] . "</h4>";
                     ?>
                     <hr class="content__separator">
-                    <p>Стажировка в Globerce Capital</p>
+                    <p>Работа в Globerce Capital</p>
                     <p>АУЭС им.Г.Даукеева</p>
                     <p>ВТ(ПИ)-20-3</p>
                     <p>Школа №187 им. Г.Титова</p>
@@ -170,7 +170,7 @@
             <div>
                 <?php
                 include './php/users.php';
-
+                
                 if (!count($msg_array)) {
                     echo '<h4>Пользователей пока нет </h4>';
                 } else {

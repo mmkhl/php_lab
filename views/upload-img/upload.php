@@ -1,6 +1,4 @@
 <?php
-
-// include './php/conQuery.php';
 $server = $_SERVER['SERVER_ADDR'];
 $username = 'root';
 $password = '';

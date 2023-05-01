@@ -20,7 +20,7 @@ session_start();
         <h2 class="text__nad">Регистрация</h2>
       </div>
       <div class="form__input">
-        <input type="text" name="name_user" placeholder="Имя">
+        <input type="text" name="name_user" placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ\s]+" required>
       </div>
       <div class="form__input">
         <input type="text" name="surname" placeholder="Фамилия">
